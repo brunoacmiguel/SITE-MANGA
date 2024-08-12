@@ -1,0 +1,266 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+@font-face {
+    font-family: 'GreatVibe';
+    src: url('fontes/Great_Vibes/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lugrassimo';
+    src: url('fontes/Lugrasimo/Lugrasimo-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fontes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --gv: 'GreatVibe', cursive;
+    --lg: 'Lugrassimo', serif;
+    --os: 'Open Sans', arial, sans-serif
+}
+
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+header {
+    background-color:white;
+    padding: 10px;
+}
+
+header h1 {
+    display: inline;
+    font-family: var(--gv);
+    color: rgb(41, 41, 250);
+    margin-right: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#header1 {
+    display: block;
+    margin-bottom: 30px;
+}
+
+header a {
+    display: inline;
+    padding: 30px 5px 30px 5px;
+    text-decoration: none;
+    color: rgb(41, 41, 250);
+    margin-right: 20px;
+    background-color: white;
+}
+
+header input {
+
+    width: 530px; 
+    max-width: 530px; 
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+header a:hover {
+    color: rgb(41, 41, 250);
+    background-color: rgb(149, 147, 247);
+}
+
+main{
+    position: relative;
+}
+
+section#bomb{
+    position: relative;
+    background-color: #002C63;
+    height: 180px;
+}
+
+section#bomb h1{
+    font-family: var(--os);
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    text-align: left;
+    transform: translate(8%, 190%);
+}
+
+div#indices{
+    position: absolute;
+    transform: translate(12%, 213%);
+}
+
+p.inline{
+    padding-right: 20px;
+    display: inline;
+    color: white;
+}
+
+p.inline:hover{
+    transition: 1s;
+    color: rgb(58, 214, 253);
+}
+
+section#page1{
+    background-color: white;
+    height: 100px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.clicks {
+    display: block;
+    position: absolute;
+    border-bottom: blue 2px solid;
+    padding: 10px;
+    font-size: 15px;
+    font-family: var(--os);
+    color: rgb(0, 91, 175);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.clicks:hover {
+    color: rgb(0, 144, 228);
+    transition: 1s;
+}
+
+#sobreloja {
+    transform: translate(110%, 45%);
+}
+
+#sobreloja1 {
+    color: gray;
+    transform: translate(110%, 45%);
+}
+
+#biodono {
+    transform: translate(169%, 45%);
+}
+
+#biodono1 {
+    color: gray;
+    transform: translate(169%, 45%);
+}
+
+#mangatot {
+    transform: translate(362%, 45%);
+}
+
+
+section#sobre{
+    background-color: rgb(245, 245, 245);
+    position: relative;
+}
+
+section#sobre h1{
+    position: absolute;
+    font-size: 30px;
+    font-family: var(--os);
+    transform: translate(7%, -157%);
+    color: #002C63;
+}
+
+article#info{
+    width: 1194px;
+    position: absolute;
+    padding: 80px 20px 20px 20px;
+    background-color: white;
+    transform: translate(3%, 11%);
+    box-shadow: rgba(0, 0, 0, 0.363) 1px -1px 4px 0px;
+}
+
+
+article#info h1{
+    position: absolute;
+    font-size: 15px;
+    color: #002C63;
+    transform: 0%, -137%;
+}
+
+article#info p{
+    width: 860px;
+    padding: 5px;
+    text-indent: 5px;
+    text-align: justify;
+}
+
+article#info img{
+    position: absolute;
+    transform: translate(301%, -104%);
+    box-shadow:  1px 2px #00000073;
+}
+
+
+
+footer{
+    position: absolute;
+    transform: translate(9px, 542px);
+    padding: 10px;
+    background-color:#002C63;
+    width: 96.5vw;
+    height: 40px;
+}
+
+footer p{
+    position: absolute;
+    transform: translate(6%, 67%);
+    text-align: center;
+    color: #ffffff;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 18px; 
+        margin-bottom: 10px; 
+    }
+
+    header a {
+        padding: 20px 5px; 
+    }
+
+
+    section#bomb h1 {
+        font-size: 25px; 
+        transform: translate(4%, 150%); 
+    }
+
+    div#indices {
+        transform: translate(8%, 90%); 
+    }
+
+
+    section#page1 h2 {
+        font-size: 12px;
+        transform: translate(100%, 45%); 
+    }
+
+    section#sobre h1 {
+        font-size: 25px;
+        transform: translate(7%, -150%); 
+    }
+
+    article#info {
+        padding: 50px 10px 10px 10px; 
+        width: 90%; 
+        transform: translate(5%, 11%);
+    }
+
+    
+}
+
